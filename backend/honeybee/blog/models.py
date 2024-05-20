@@ -27,13 +27,15 @@ class Comment(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     post = models.ForeignKey('Post', on_delete=models.CASCADE)
+
 class ReplyComment(models.Model):
     author = models.CharField(max_length=60)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     post = models.ForeignKey('Post', on_delete=models.CASCADE)
     comment = models.ForeignKey('Comment', on_delete=models.CASCADE)
+
 class Hitslike(models.Model):
-      hitcount = models.IntegerField(default=0)
-      viewcount = models.IntegerField(default=0)
-      post = models.ForeignKey('Post', on_delete=models.CASCADE)
+    hitcount = models.IntegerField(default=0)
+    viewcount = models.IntegerField(default=0)
+    post = models.ForeignKey('Post', on_delete=models.CASCADE)
