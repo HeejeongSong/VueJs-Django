@@ -8,6 +8,7 @@ from .models import Post, Comment, ReplyComment, Hitslike             # add this
 class PostView(viewsets.ModelViewSet):       # add this
     serializer_class =  BlogSerializer       # add this
     queryset = Post.objects.all()  
+
 class CommentView(viewsets.ModelViewSet):
     serializer_class =  CommentSerilaizer       # add this
     queryset = Comment.objects.all()  
@@ -18,6 +19,7 @@ class CommentView(viewsets.ModelViewSet):
         if posts  is not None:
             return qs.filter(post=posts)
         return qs
+    
 class ReplyCommentView(viewsets.ModelViewSet):
     serializer_class =  ReplyCommentSerilaizer       # add this
     queryset = ReplyComment.objects.all()  
@@ -32,6 +34,7 @@ class ReplyCommentView(viewsets.ModelViewSet):
         elif pos is not None or com is not None:
             return qs.filter(post=pos)  
         return qs
+    
 class HitsLikesCountView(viewsets.ModelViewSet):
     serializer_class =  HitsLikeSerilaizer       # add this
     queryset = Hitslike.objects.all()  
