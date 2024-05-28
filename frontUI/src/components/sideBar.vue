@@ -1,6 +1,6 @@
 <template>
 <div>
-  <!-- Sidebar -->
+  
   <nav id="sidebar">
     <div class="sidebar-header">
       <h3>{{title}}</h3>

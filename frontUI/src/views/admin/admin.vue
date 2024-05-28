@@ -66,7 +66,7 @@ import SideBar from '@/components/sideBar'
 import * as chartConfigs from '@/components/Charts/config';
 import LineChart from '@/components/Charts/LineChart';
 export default {
-    name:'Admin',
+    name:'MyAdmin',
     components:{
         SideBar,
         LineChart,

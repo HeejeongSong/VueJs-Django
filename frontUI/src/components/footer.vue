@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p><img alt="Vue logo" src="../assets/logo.png"> Fussionapp &copy; 2019</p>
+        <p><img alt="Vue logo" src="../assets/logo.png"/> Fussionapp &copy; 2019</p>
     </footer>
 </template>
 <script>

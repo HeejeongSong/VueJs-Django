@@ -13,7 +13,7 @@
        <b-nav-item href="/blog">Blog</b-nav-item>
        <b-nav-item href="/about">About</b-nav-item>
      </b-navbar-nav>
-      <!-- Right aligned nav items -->
+      
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
@@ -43,7 +43,7 @@
 <script>
 import {BNavbarNav, BNavItem, BNavbar, BNavForm,BFormInput, BNavItemDropdown,BDropdownItem, BNavbarBrand, BCollapse, BNavbarToggle, BButton} from 'bootstrap-vue';
 export default {
-    name:'Navi',
+    name:'MyNavi',
     components:{
         'b-navbar-brand':BNavbarBrand,
         'b-dropdown-item':BDropdownItem,
